@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hangman</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script defer type="text/javascript" src="js/words.js"></script>
+    <script defer type="text/javascript" src="js/player.js"></script>
+    <script defer type="text/javascript" src="js/game.js"></script>
+    <script defer type="text/javascript" src="js/dictionary.js"></script>
+    <script defer type="text/javascript" src="js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Hangman</h1>
+    </header>
+    <article id="first">
+      <img class="left-hangman-image" src="img/hangman-first-panel.png">
+      <img class="right-hangman-image" src="img/hangman-first-panel.png">
+      <h2>What is your name?</h2>
+      <div class="form">
+          <input type="text" id="name-input"></input>
+          <input type="submit" id="play-button" value="Play"></input>
+      </div>
+      <p class="wikipedia">The word to guess is represented by a row of dashes, representing each letter of the word. If the guessing player suggests a letter which occurs in the word, the game writes it in all its correct positions. If the suggested letter or number does not occur in the word, the game draws one element of a hanged man stick figure as a tally mark.</p>
+    </article>
+    <article id="second">
+      <img src="img/win.gif" id="win" class="winLoseGif">
+      <img src="img/lose.gif" id="lose" class="winLoseGif">
+      <div id="word-panel">
+        <ul id="word-list">
+        </ul>
+      </div>
+      <div class="guesses-buttons">
+        <div class="guesses-panel"> 
+          <h3><span id="playerName"></span> you have <span id="playerOpportunities"></span> opportunities. </h3>
+          <ul id="guesses-list">
+          </ul>
+        </div>
+        <input type="button" id="save-game-button" value="Save game"></input>
+        <input type="button" id="start-again-button" value="Start again"></input>
+      </div>
+      <div class="hangman">
+        <img id="hangman-base" src="img/hangman.png">
+        <img id="hangman-head" src="img/hangman-head.png">
+        <img id="hangman-body" src="img/hangman-body.png">
+        <img id="hangman-right-arm" src="img/hangman-body.png">
+        <img id="hangman-left-arm" src="img/hangman-body.png">
+        <img id="hangman-right-leg" src="img/hangman-body.png">
+        <img id="hangman-left-leg" src="img/hangman-body.png">
+      </div>  
+    </article>
+    <footer>
+      <p>Created by Mikel Garcia.</p>
+    </footer>
+  </body>
+</html>

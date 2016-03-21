@@ -1,0 +1,246 @@
+body {
+  font-family: sans-serif;
+  margin: 0
+}
+
+header {
+  background-color: #33373A;
+  min-height: 100px;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  padding-top: 28px;
+}
+
+h2 {
+  text-align: center;
+  margin: 0;
+  padding-top: 28px;
+  padding-bottom: 10px;
+}
+
+#first {
+  margin-top: 100px;
+  margin-bottom: 130px;
+}
+
+#second {
+  display: none;
+}
+
+footer {
+  background-color: #33373A;
+  min-height: 50px;
+  color: white;
+  text-align: center;
+  clear: both;
+}
+
+footer p {
+  margin: 0;
+  padding-top: 15px;
+}
+
+#word-panel {
+  background-color: #E4E5E7;
+  width: 89%;
+  margin: 3%;
+  padding: 20px;
+  float: left;
+  margin-bottom: 0;
+}
+
+#word-list {
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+}
+
+#word-list li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.guesses-buttons {
+  width: 50%;
+  margin: 3%;
+  float: left;
+}
+
+.guesses-panel {
+  background-color: #E4E5E7;
+  padding: 20px;
+}
+
+#guesses-list {
+  font-size: 25px;
+  margin: 0;
+}
+
+#guesses-list li {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-right: 6px;
+  margin-bottom: 10px;
+}
+
+.guesses-ok {
+  background-color: #4CAF50;
+}
+
+.guesses-fail {
+  background-color: #EF5350;
+}
+
+.hangman {
+  background-color: #E4E5E7;
+  width: 30%;
+  margin: 3%;
+  padding: 20px;
+  float: left;
+}
+
+#hangman-base {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+#hangman-head {
+  position: relative;
+  bottom: 216px;
+  right: 113px;
+  display: none;
+}
+
+#hangman-body {
+  position: relative;
+  bottom: 145px;
+  right: 141px;
+  display: none;
+}
+
+#hangman-right-arm {
+  position: relative;
+  bottom: 160px;
+  right: 168px;
+  -ms-transform: rotate(43deg);
+  -webkit-transform: rotate(43deg);
+  transform: rotate(43deg);
+  height: 53px;
+  display: none;
+}
+
+#hangman-left-arm {
+  position: relative;
+  bottom: 160px;
+  right: 137px;
+  -ms-transform: rotate(-43deg);
+  -webkit-transform: rotate(-43deg);
+  transform: rotate(-43deg);
+  height: 53px;
+  display: none;
+}
+
+#hangman-right-leg {
+  position: relative;
+  bottom: 80px;
+  right: 179px;
+  -ms-transform: rotate(25deg);
+  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
+  display: none;
+}
+
+#hangman-left-leg {
+  position: relative;
+  bottom: 80px;
+  right: 158px;
+  -ms-transform: rotate(43deg);
+  -webkit-transform: rotate(43deg);
+  transform: rotate(-25deg);
+  display: none;
+}
+
+.form {
+  width: 600px;
+  margin: auto;
+  padding: 5px;
+}
+
+.form * {
+  font-size: 16px;
+  height: 35px;
+}
+
+#name-input {
+  width: 80%;
+}
+
+#play-button {
+  background-color: #257AB9;
+  width: 15%;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 20px;
+  color: white;
+  outline: none;
+}
+
+#start-again-button {
+  background-color: #257AB9;
+  width: 20%;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 20px;
+  color: white;
+  margin-top: 15px;
+  outline: none;
+  padding: 7px;
+  display: none;
+}
+
+#save-game-button {
+  background-color: #257AB9;
+  width: 20%;
+  border-radius: 5px;
+  border-style: none;
+  font-size: 20px;
+  color: white;
+  margin-top: 15px;
+  outline: none;
+  padding: 7px;
+}
+
+.wikipedia {
+  width: 40%;
+  margin: auto;
+  margin-top: 52px;
+  text-align: center;
+}
+
+.left-hangman-image {
+  float: left;
+}
+
+.right-hangman-image {
+  float: right;
+}
+
+.winLoseGif {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%); /* Safari and Chrome */
+  -moz-transform: translate(-50%, -50%); /* Firefox */
+  -ms-transform: translate(-50%, -50%); /* IE 9 */
+  -o-transform: translate(-50%, -50%); /* Opera */
+}
